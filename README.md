@@ -39,3 +39,5 @@ Fork this repo, make your changes, and create a pull request to merge your chang
 ## TODOs
 
 - [ ] Generate PDF version of docs
+- [ ] Enhance `print.css` rules
+- [ ] Clicking on links should jump heading anchors (e.g. `#welcome`, `#implementation`)
