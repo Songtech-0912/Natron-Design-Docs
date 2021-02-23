@@ -8,13 +8,13 @@ A community-driven effort to provide design guidelines for Natron, the open-sour
 
 I am a proud member of the [Natron](https://github.com/NatronGithub/Natron) community, and like many like-minded community members, Natron's slow downfall and lack of development deeply affected us. That's why we decided to rejuvenate Natron, with a [website redesign effort](#), a [UI refresh](#), and lots of cool stuff!
 
-To organize all of that design-related stuff, we create these docs pages. View them live at <https://songtech-0912.github.io/natron-design-docs>.
+To organize all of that design-related stuff, we create these docs pages. View them live at <https://songtech-0912.github.io/Natron-Design-Docs/>.
 
 ## Getting Started
 
 ### Easiest Way
 
-You can read the docs online [here](https://github.com/Songtech-0912/Natron-Design-Docs/issues) without installing anything on your computer. If you see an issue or typo somewhere, report it to me [on GitHub](https://github.com/Songtech-0912/Natron-Design-Docs/issues)
+You can read the docs online [here](https://songtech-0912.github.io/Natron-Design-Docs/) without installing anything on your computer. If you see an issue or typo somewhere, report it to me [on GitHub](https://github.com/Songtech-0912/Natron-Design-Docs/issues)
 
 ### Second-Easiest Way
 
@@ -24,7 +24,7 @@ You can clone this repository to a local folder, and work on it that way. To do 
 git clone https://github.com/Songtech-0912/Natron-Design-Docs.git && cd Natron-Design-Docs
 ```
 
-Then, assuming you have `npm` installed, you may begin generating the docs, like so:
+Then, assuming you have `npm` and python 3.3+ installed, you may begin generating the docs, like so:
 
 ```
 npm run dev:dist
