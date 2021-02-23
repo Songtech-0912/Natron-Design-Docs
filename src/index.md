@@ -12,7 +12,7 @@ Conversely, users also have finite time and effort. They don't have all day to s
 
 Plus, design isn't just an aesthetical need - it's a practical one, too. Accessibility and responsive design are no longer optional in today's day and age. If your website isn't designed to scale properly on a mobile device, or to accomodate the needs of disadvantaged users, you are excluding a massive number of people from using your site.
 
-## Our Guiding Principles
+### Our Guiding Principles
 
 We want to show that open-source projects and good design are not mutually exclusive. In other words, we want to:
 
@@ -22,6 +22,6 @@ We want to show that open-source projects and good design are not mutually exclu
 
 Translating these abstract guiding principles something tangible is what design aims to do. The *implementation* is the hard part, but it's also what ultimately counts, and that's what we will discuss in these docs.
 
-## Getting Started
+### Getting Started
 
 This guide is intended for developers, hobbyists, professional designers, and novices alike. It's meant to take you into the mind of a designer, while also keeping design simple and easy to understand. If you're interested in those topics, read on! 
