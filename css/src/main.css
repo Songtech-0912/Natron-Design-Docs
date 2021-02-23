@@ -1,0 +1,92 @@
+/* main.css */
+/* CSS uses TailwindCSS and is compiled from TailwindCSS directives */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    body {
+        animation: fadeInAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .pagechange {
+        display: block;
+        animation: fadeInAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOutAnimation {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes slideInProgressBar {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+
+     /* Little checkbox hack to implement javascript disable */
+     .modal-window {
+         position: fixed;
+         background-color: rgba(200, 200, 200, 0.75);
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         z-index: 999;
+         opacity: 1;
+         pointer-events: none;
+         -webkit-transition: all 0.3s;
+         -moz-transition: all 0.3s;
+         transition: all 0.3s;
+         animation: fadeOutAnimation ease 3s 6s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+     }
+
+     .modal-window>div {
+         width: 400px;
+         position: relative;
+         margin: 10% auto;
+         padding: 2rem;
+         background: #fff;
+         color: #444;
+     }
+
+     .modal-window header {
+         font-weight: bold;
+     }
+
+     #nojs-progress-bar {
+         width: 100%;
+         height: calc(100% - 1.5em);
+         border-radius: 2rem;
+         transform-origin: left center;
+         animation: slideInProgressBar ease 8s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+     }
+}
+
+

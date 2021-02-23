@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <title>Natron Design Guidelines</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Home of the design docs for Natron, the open-source compositing software" name="description"/>
+    <link href="css/dist/main.dist.css" rel="stylesheet"/>
+    <!-- Please DO NOT remove any of these comments! -->
+    <style></style>
+  </head>
+  <body>
+    <!-- This page should be marked up with as much semantic HTML as possible -->
+
+    <!-- Implement a small info modal for JavaScript disabled users -->
+    <noscript>
+      <header class="modal-window" id="open-modal">
+        <div class="mx-auto flex flex-col space-y-5">
+          <h1 class="text-2xl my-2 mx-1">Hey There, JavaScript Disabler!</h1>
+          <p>
+            Congrats for choosing to protect the web from JavaScript misuse and
+            abuse! Here's some good news for you: this website doesn't require
+            any JavaScript!
+          </p>
+          <p>
+            (Don't worry, this popup will automatically disappear within 6
+            seconds)
+          </p>
+          <progress id="nojs-progress-bar"></progress>
+        </div>
+      </header>
+    </noscript>
+
+    <!-- Main content starts here -->
+
+    <main class="flex flex-row text-gray-700 body-font max-h-full">
+
+      <!-- Left navigation drawer -->
+      <!-- This is hidden at small screen sizes to make more room for content -->
+
+      <nav class="hidden lg:block w-1/5 border-r-2 flex flex-col space-y-2 max-h-screen xl:text-lg">
+        <div class="border-b-2 w-full h-1/12 py-3 flex justify-around">
+          <label class="mx-auto uppercase">Outline</label>
+        </div>
+        <a class="px-6 font-bold hover:underline" href="#">Welcome</a>
+        <div class="px-12 flex flex-col space-y-2">
+          <a class="hover:underline" href="#our-guiding-principles">Design Goals</a>
+          <a class="hover:underline" href="#implementation-guide">Implementation Guide</a>
+          <a class="hover:underline" href="#">Brand Identity</a>
+          <div class="px-6 flex flex-col space-y-2">
+            <a class="hover:underline" href="#">Color</a>
+            <a class="hover:underline" href="#">Form</a>
+            <a class="hover:underline" href="#">Typography</a>
+            <a class="hover:underline" href="#">Layout</a>
+          </div>
+          <a class="hover:underline" href="#">Design Best Practices</a>
+          <a class="hover:underline" href="#">Mistakes to avoid</a>
+          <a class="hover:underline" href="#">Theming</a>
+          <a class="hover:underline" href="#">Interactions</a>
+          <a class="hover:underline" href="#">Motion</a>
+          <a class="hover:underline" href="#">Accessibility</a>
+          <a class="hover:underline" href="#">Platform-specific guidance</a>
+          <a class="hover:underline" href="#">Contributing</a>
+        </div>
+      </nav>
+
+      <!-- Right content container -->
+
+      <section class="w-full flex-grow px-14 py-20 prose xl:prose-lg max-w-none w-full max-h-screen overflow-y-scroll" id="markdownContentGoesHere">
+      <h1>Natron Design Documentation</h1>
+<p>Welcome to the Natron Design Docs! These guidelines are intended to form the basis of designing for Natron, the open-source VFX and compositing software. Natron offers a comprehensive suite of tools for any compositor, enabling everything from basic video manipulation to cinematic multi-pass compositing. We believe that design is an integral part of establishing Natron as a fully-featured, professional compositing suite, and we have carefully put together these docs for that reason. As with all parts of Natron, these docs are a living document, and are freely available under an open-source license.</p>
+<h2>Why Design?</h2>
+<p>You might wonder why an open-source project like Natron would require designers. Surely, the features of the application are more important! So why waste valuable time on design?</p>
+<p>Because open-source projects, especially ones like Natron, can have <em>great</em> potential. However, without good design, we have no way of showing that potential. There is a world of difference between open-source software with <em>good</em> design - like VS Code or Atom - and software with <em>bad design</em>. If Natron can aspire to professional design standards, we can realize that untapped potential. And we can release the amazing, community-building power of free and open-source software.</p>
+<p>Conversely, users also have finite time and effort. They don't have all day to spend, looking for a compositing application, nor do they have the effort to extensively test each and every compositing application for its features. Most won't even care about free and open-source. And if they are presented with a terrible-looking user interface, they're not likely to want to use it. Even if they have to use it on a daily basis, using software with terrible GUIs – something Sibelius/Vim is famous for – becomes a pain.</p>
+<p>Plus, design isn't just an aesthetical need - it's a practical one, too. Accessibility and responsive design are no longer optional in today's day and age. If your website isn't designed to scale properly on a mobile device, or to accomodate the needs of disadvantaged users, you are excluding a massive number of people from using your site.</p>
+<h2>Our Guiding Principles</h2>
+<p>We want to show that open-source projects and good design are not mutually exclusive. In other words, we want to:</p>
+<ul>
+<li>Create immersive and engaging experiences that breathe life into Natron</li>
+<li>Create a recognizable visual identity that will represent our project</li>
+<li>Laying down a foundation of intuitive tools that will help Natron grow</li>
+</ul>
+<p>Translating these abstract guiding principles something tangible is what design aims to do. The <em>implementation</em> is the hard part, but it's also what ultimately counts, and that's what we will discuss in these docs.</p>
+<h2>Getting Started</h2>
+<p>This guide is intended for developers, hobbyists, professional designers, and novices alike. It's meant to take you into the mind of a designer, while also keeping design simple and easy to understand. If you're interested in those topics, read on! </p>
+<h2>Implementation Guide</h2>
+<h3>Natron's Approach to Design</h3>
+<p>Here at Natron, we face tremendous challenges in encorporating design. We have a small design team, limited monetary resources, and Natron is non-profit. Furthermore, as an open-source project, we have high standards to live up to. Out of these special circumstances, we developed a unique approach to design.</p>
+<p>First, where possible, we rely on open standards to share, work, and publish designs. Regardless of the software we use to make our mockups, we share designs as widely-supported SVG files. Then, we use <code>git</code> to synchronize our design assets (SVG or otherwise) to GitHub. That means we can do awesome things - like time travel! Designers can make breaking changes sometimes. But thanks to GitHub's version control, we can go back in time and grab the unchanged version, without a hitch!</p>
+<h3>Baseline Guidelines</h3></section>
+    </main>
+  
+
+
+
+</body></html><!-- HTML is formatted with prettier --><!-- Remember to use Ctrl + J in Spacemacs (in insert mode) to expand emmet abbreviations -->

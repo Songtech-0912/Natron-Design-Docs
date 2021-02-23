@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Natron Design Guidelines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home of the design docs for Natron, the open-source compositing software"
+    />
+    <link href="css/dist/main.dist.css" rel="stylesheet" />
+    <!-- Please DO NOT remove any of these comments! -->
+    <style></style>
+  </head>
+  <body>
+    <!-- This page should be marked up with as much semantic HTML as possible -->
+
+    <!-- Implement a small info modal for JavaScript disabled users -->
+    <noscript>
+      <header id="open-modal" class="modal-window">
+        <div class="mx-auto flex flex-col space-y-5">
+          <h1 class="text-2xl my-2 mx-1">Hey There, JavaScript Disabler!</h1>
+          <p>
+            Congrats for choosing to protect the web from JavaScript misuse and
+            abuse! Here's some good news for you: this website doesn't require
+            any JavaScript!
+          </p>
+          <p>
+            (Don't worry, this popup will automatically disappear within 6
+            seconds)
+          </p>
+          <progress id="nojs-progress-bar"></progress>
+        </div>
+      </header>
+    </noscript>
+
+    <!-- Main content starts here -->
+
+    <main class="flex flex-row text-gray-700 body-font max-h-full">
+
+      <!-- Left navigation drawer -->
+      <!-- This is hidden at small screen sizes to make more room for content -->
+
+      <nav
+        class="hidden lg:block w-1/5 border-r-2 flex flex-col space-y-2 max-h-screen xl:text-lg"
+      >
+        <div class="border-b-2 w-full h-1/12 py-3 flex justify-around">
+          <label class="mx-auto uppercase">Outline</label>
+        </div>
+        <a class="px-6 font-bold hover:underline" href="#">Welcome</a>
+        <div class="px-12 flex flex-col space-y-2">
+          <a class="hover:underline" href="#our-guiding-principles">Design Goals</a>
+          <a class="hover:underline" href="#implementation-guide">Implementation Guide</a>
+          <a class="hover:underline" href="#">Brand Identity</a>
+          <div class="px-6 flex flex-col space-y-2">
+            <a class="hover:underline" href="#">Color</a>
+            <a class="hover:underline" href="#">Form</a>
+            <a class="hover:underline" href="#">Typography</a>
+            <a class="hover:underline" href="#">Layout</a>
+          </div>
+          <a class="hover:underline" href="#">Design Best Practices</a>
+          <a class="hover:underline" href="#">Mistakes to avoid</a>
+          <a class="hover:underline" href="#">Theming</a>
+          <a class="hover:underline" href="#">Interactions</a>
+          <a class="hover:underline" href="#">Motion</a>
+          <a class="hover:underline" href="#">Accessibility</a>
+          <a class="hover:underline" href="#">Platform-specific guidance</a>
+          <a class="hover:underline" href="#">Contributing</a>
+        </div>
+      </nav>
+
+      <!-- Right content container -->
+
+      <section id="markdownContentGoesHere" class="w-full flex-grow px-14 py-20 prose xl:prose-lg max-w-none w-full max-h-screen overflow-y-scroll" >
+      </section>
+    </main>
+  </body>
+</html>
+<!-- HTML is formatted with prettier -->
+<!-- Remember to use Ctrl + J in Spacemacs (in insert mode) to expand emmet abbreviations -->
