@@ -18,7 +18,7 @@ We want to show that open-source projects and good design are not mutually exclu
 
 * Create immersive and engaging experiences that breathe life into Natron
 * Create a recognizable visual identity that will represent our project
-* Laying down a foundation of intuitive tools that will help Natron grow
+* Laying down a foundation of intuitive tools that make Natron stand apart from the crowd
 
 Translating these abstract guiding principles something tangible is what design aims to do. The *implementation* is the hard part, but it's also what ultimately counts, and that's what we will discuss in these docs.
 
